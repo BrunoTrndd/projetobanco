@@ -5,7 +5,8 @@ import br.udesc.pro2.exercicio.projeto.bb.model.banco.ModelBancoDoBrasil;
 
 public class BancoDoBrasilFactory implements IFactoryBanco{
 
-    public IBanco criaBanco(String nome) {
+    @Override
+    public IBanco criarBanco(String nome) {
         return new ModelBancoDoBrasil(nome);
     }
 

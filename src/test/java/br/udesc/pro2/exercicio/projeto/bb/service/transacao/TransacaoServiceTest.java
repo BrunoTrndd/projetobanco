@@ -40,13 +40,15 @@ public class TransacaoServiceTest {
         contaDestino.setCodigo(2);
         double valorTransacao = 500.0;
 
-        when(repositorio.obterSaldoCliente(contaOrigem)).thenReturn(100.0); // Saldo insuficiente
+        when(repositorio.obterSaldoCliente(contaOrigem)).thenReturn(100.0, 1000.0);
 
         // Act
         String resultado = service.realizarTransacao(contaOrigem, contaDestino, valorTransacao);
+        String resultado2 = service.realizarTransacao(contaOrigem, contaDestino, valorTransacao);
 
         // Assert
         assertEquals("Saldo insuficiente para realizar a transação", resultado);
+        assertEquals("Transação realizada com sucesso.", resultado2);
     }
 
     @Test

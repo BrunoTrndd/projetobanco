@@ -26,7 +26,7 @@ public class TransacaoService {
         } catch (TransacaoException e) {
              return e.getMessage();
         }
-        return "Transacao realizada com sucesso";
+        return "Transação realizada com sucesso.";
     }
 
 }

@@ -1,4 +1,4 @@
-package br.udesc.pro2.exercicio.projeto.bb;
+package br.udesc.pro2.exercicio.projeto.bb.factory.banco;
 
 import br.udesc.pro2.exercicio.projeto.bb.factory.banco.BancoDoBrasilFactory;
 import br.udesc.pro2.exercicio.projeto.bb.factory.banco.IFactoryBanco;
